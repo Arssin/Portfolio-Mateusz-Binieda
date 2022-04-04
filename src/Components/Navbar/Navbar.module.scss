@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  min-height: 7vh;
+  font-size: 1.2rem;
+  padding: 5px;
+  z-index: 5;
+  gap: 2rem;
+
+  .logo {
+    max-height: 80px;
+    min-width: 100px;
+  }
+
+  .navlist {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    gap: 2.3rem;
+    flex-wrap: wrap;
+  }
+}
