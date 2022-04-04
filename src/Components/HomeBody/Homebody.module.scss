@@ -5,6 +5,10 @@
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 
 @keyframes gradient {
@@ -16,5 +20,21 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.home {
+  .welcome {
+    margin-top: 4rem;
+    background: url('../../images/tlo.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 30rem;
+    padding: 10px;
+    filter: contrast(1.35) brightness(0.65);
+    -webkit-box-shadow: inset 1px 1px 28px 15px rgba(112, 99, 99, 0.71);
+    box-shadow: inset 1px 1px 28px 15px rgba(82, 77, 77, 0.71);
+    .tloText {
+    }
   }
 }
