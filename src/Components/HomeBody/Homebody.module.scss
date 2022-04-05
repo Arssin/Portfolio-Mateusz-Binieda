@@ -7,7 +7,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -25,7 +25,6 @@
 
 .home {
   .welcome {
-    margin-top: 4rem;
     background: url('../../images/tlo.png') no-repeat;
     background-position: center;
     background-size: cover;
@@ -80,7 +79,7 @@
       color: rgba(238, 3, 3, 0.71);
       font-family: 'Montserrat Medium';
       transform: scale(0.94);
-      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1) infinite;
+      animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1) infinite;
       color: #ffffff;
 
       text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #ff002b, 5px 0 3px #800015,
@@ -126,6 +125,26 @@
             opacity: 1;
             filter: blur(0);
           }
+        }
+      }
+    }
+    .catchMe {
+      margin-top: 6rem;
+      color: rgb(221, 198, 198);
+      display: flex;
+      justify-content: center;
+
+      .catchMeText {
+        margin-right: 1rem;
+        font-size: 26px;
+        //!CZCIONKA DO ZMIANY
+      }
+
+      .icons {
+        margin-right: 1rem;
+        fill: white;
+        &:hover {
+          fill: orange;
         }
       }
     }
