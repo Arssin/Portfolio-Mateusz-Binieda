@@ -5,8 +5,9 @@ export function HomeBody() {
     <div className={styles.body}>
       <section className={styles.home}>
         <div className={styles.welcome}>
-          <div className={styles.tloText}>
-            <h3>Home</h3>
+          <div className={styles.backgroundText}>
+            <h2 className={styles.welcomeText}>Welcome!</h2>
+            <h2 className={styles.welcomeText2}>Welcome!</h2>
           </div>
         </div>
       </section>
