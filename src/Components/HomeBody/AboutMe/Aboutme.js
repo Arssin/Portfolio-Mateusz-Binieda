@@ -1,4 +1,5 @@
 import styles from '../AboutMe/Aboutme.module.scss';
+import avatar from '../../../images/avatar.jpg';
 
 export function Aboutme() {
   return (
@@ -14,7 +15,15 @@ export function Aboutme() {
           <br />
           ⭐️ CodersCamp 2021/2022 participant ⭐️
         </div>
-        <div className={styles.myPicture}>Zdjęcie</div>
+        <div className={styles.picturediv}>
+          <ul className={styles.pictureText}>
+            <li>Mateusz Binięda</li>
+            <li>25 years old </li>
+            <li>+48 695 890 109</li>
+            <li>mateusz.binieda@onet.pl</li>
+          </ul>
+          <img src={avatar} alt="avatar" className={styles.avatar} />
+        </div>
       </div>
     </section>
   );
