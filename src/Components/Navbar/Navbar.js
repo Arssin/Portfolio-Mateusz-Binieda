@@ -1,21 +1,24 @@
 import styles from '../Navbar/Navbar.module.scss';
 import { Link } from 'react-router-dom';
-import logo from '../../images/Logo1.png';
+import logo from '../../images/Logo.png';
 
 export function Navbar() {
   return (
-    <div className={styles.navbar}>
+    <nav className={styles.navbar}>
       <Link to="/">
         <img className={styles.logo} src={logo} alt="Logo" />
       </Link>
       <ul className={styles.navlist}>
-        <li>Home</li>
-        <li>About Me</li>
-        <li>My Projects</li>
-        <li>Skills</li>
-        <li>Hobbies</li>
-        <li>Contact Me</li>
+        {['home', 'about', 'my projects', 'skills', 'hobbies', 'contact me'].map((item) => (
+          <li key={`link-${item}`}>
+            <div />
+            <a className={styles.listanchor} href={`#${item}`}>
+              {item}
+            </a>
+          </li>
+        ))}
       </ul>
-    </div>
+      {/* <div className={styles.mobileMenu}></div> */}
+    </nav>
   );
 }
