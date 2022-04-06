@@ -1,0 +1,55 @@
+.aboutMeMainDiv {
+  width: 70vw;
+  align-self: center;
+  padding: 10px;
+  margin: 2rem 0 0 0;
+  flex-wrap: wrap;
+
+  .title {
+    padding: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .aboutMe {
+    padding: 15px 35px;
+    background-color: rgb(95, 92, 92);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .text {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      width: 80vw;
+      text-align: left;
+      border-right: 5px dotted #cccc;
+      font-size: 0.9em;
+    }
+    .picturediv {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 40vw;
+
+      flex-wrap: wrap;
+
+      .pictureText {
+        text-align: left;
+        list-style-type: none;
+        font-size: 0.9em;
+      }
+      .avatar {
+        width: 30%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .aboutMe {
+    flex-wrap: wrap;
+  }
+}

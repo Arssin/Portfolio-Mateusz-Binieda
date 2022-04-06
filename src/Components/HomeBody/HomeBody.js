@@ -1,4 +1,5 @@
 import styles from '../HomeBody/Homebody.module.scss';
+import { Aboutme } from './AboutMe/Aboutme';
 
 export function HomeBody() {
   return (
@@ -67,7 +68,7 @@ export function HomeBody() {
           </div>
         </div>
       </section>
-      <section>About Me</section>
+      <Aboutme />
       <section>My Projects</section>
       <section>Skills</section>
       <section>Hobbies</section>
