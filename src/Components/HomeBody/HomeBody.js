@@ -68,11 +68,11 @@ export function HomeBody() {
           </div>
         </div>
       </section>
-      <Aboutme />
-      <section>My Projects</section>
-      <section>Skills</section>
-      <section>Hobbies</section>
-      <section>Contact Me</section>
+      <Aboutme id="about" />
+      <section id="my projects">My Projects</section>
+      <section id="skills">Skills</section>
+      <section id="hobbies">Hobbies</section>
+      <section id="contact me">Contact Me</section>
     </div>
   );
 }
