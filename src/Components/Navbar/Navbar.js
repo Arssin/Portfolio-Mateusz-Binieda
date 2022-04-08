@@ -2,11 +2,10 @@ import styles from '../Navbar/Navbar.module.scss';
 import { Link } from 'react-router-dom';
 import logo from '../../images/Logo.png';
 import { HamburgerMenu } from '../Navbar/HamburgerMenu';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export function Navbar() {
-  const [openHamburger, setOpenHamburger] = useState(false);
-  const toggleHamburger = () => setOpenHamburger(!openHamburger);
+  // const [openHamburger, setOpenHamburger] = useState(false);
 
   return (
     <nav className={styles.navbar}>
@@ -23,7 +22,7 @@ export function Navbar() {
           </li>
         ))}
       </ul>
-      <HamburgerMenu isOpen={openHamburger} onClick={toggleHamburger} className={styles.menu} />
+      <HamburgerMenu />
     </nav>
   );
 }
