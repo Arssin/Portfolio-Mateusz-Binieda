@@ -12,6 +12,7 @@
   max-width: 100%;
 
   .logo {
+    padding: 10px;
     max-height: 80px;
     max-width: 80px;
   }
@@ -19,10 +20,10 @@
   .navlist {
     list-style-type: none;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     margin-right: 2rem;
     gap: 2.3rem;
-    flex-wrap: wrap;
 
     .listanchor {
       text-decoration: none;
@@ -35,6 +36,25 @@
       &:hover {
         color: purple;
         border-bottom: 2px solid;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .navlist {
+      display: none;
+      margin: 0;
+      flex-flow: column nowrap;
+      background-color: rgb(37, 25, 78);
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 300px;
+      z-index: 5;
+
+      .listanchor {
+        color: white;
       }
     }
   }
