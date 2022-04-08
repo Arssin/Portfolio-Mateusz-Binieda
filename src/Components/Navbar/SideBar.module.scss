@@ -1,0 +1,29 @@
+.navlist {
+  font-size: 1rem;
+  list-style-type: none;
+  background: rgba(185, 176, 176, 0.1);
+  border-top: 2px dotted white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  min-width: 100vw;
+  top: 95px;
+  right: 0;
+  padding: 10px 25px;
+
+  .listanchor {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: purple;
+      border-bottom: 2px solid;
+    }
+  }
+}

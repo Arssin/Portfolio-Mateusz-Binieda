@@ -1,8 +1,12 @@
 import styles from '../Navbar/Navbar.module.scss';
 import { Link } from 'react-router-dom';
 import logo from '../../images/Logo.png';
+import { HamburgerMenu } from '../Navbar/HamburgerMenu';
+// import { useState } from 'react';
 
 export function Navbar() {
+  // const [openHamburger, setOpenHamburger] = useState(false);
+
   return (
     <nav className={styles.navbar}>
       <Link to="/">
@@ -18,7 +22,7 @@ export function Navbar() {
           </li>
         ))}
       </ul>
-      {/* <div className={styles.mobileMenu}></div> */}
+      <HamburgerMenu />
     </nav>
   );
 }

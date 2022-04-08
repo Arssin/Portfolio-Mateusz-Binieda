@@ -1,0 +1,19 @@
+.hamburger {
+  display: none;
+  .hamburgerIcon {
+    height: 3rem;
+    width: 2.3rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    position: fixed;
+    top: 25px;
+    right: 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+  }
+}
