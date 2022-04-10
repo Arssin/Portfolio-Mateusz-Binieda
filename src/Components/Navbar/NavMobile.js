@@ -1,6 +1,6 @@
-import styles from '../Navbar/SideBar.module.scss';
+import styles from '../Navbar/NavMobile.module.scss';
 
-export function SideBar() {
+export function NavMobile() {
   return (
     <ul className={styles.navlist}>
       {['home', 'about', 'my projects', 'skills', 'hobbies', 'contact me'].map((item) => (
