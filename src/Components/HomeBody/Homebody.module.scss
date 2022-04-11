@@ -9,6 +9,44 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+
+  .backgroundText {
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+    margin-bottom: 2rem;
+    min-height: 10vh;
+    h2 {
+      color: #fff;
+      font-size: 4rem;
+      position: absolute;
+    }
+
+    .welcomeText {
+      color: transparent;
+      -webkit-text-stroke: 2px #0f0e0e;
+    }
+
+    .welcomeText2 {
+      color: #383331;
+      animation: animate 4s ease-in-out infinite;
+    }
+
+    h3 {
+      position: relative;
+    }
+
+    @keyframes animate {
+      0%,
+      100% {
+        clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+      }
+
+      50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+      }
+    }
+  }
 }
 
 @keyframes gradient {

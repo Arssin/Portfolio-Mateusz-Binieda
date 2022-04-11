@@ -1,128 +1,49 @@
 .home {
-  .welcome {
-    position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
 
-    background-position: center;
-    background-size: cover;
-    min-height: 30rem;
-    padding: 10px;
-    filter: contrast(1.35) brightness(0.65);
-    -webkit-box-shadow: inset 1px 1px 28px 15px rgba(112, 99, 99, 0.71);
-    box-shadow: inset 1px 1px 28px 15px rgba(82, 77, 77, 0.71);
+  .catchMe {
+    color: rgb(221, 198, 198);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 50vw;
 
-    .backgroundText {
-      display: flex;
-      justify-content: center;
-
-      h2 {
-        color: #fff;
-        font-size: 4rem;
-        position: absolute;
-      }
-
-      .welcomeText {
-        color: transparent;
-        -webkit-text-stroke: 2px #0f0e0e;
-      }
-
-      .welcomeText2 {
-        color: #383331;
-        animation: animate 4s ease-in-out infinite;
-      }
-
-      h3 {
-        position: relative;
-      }
-
-      @keyframes animate {
-        0%,
-        100% {
-          clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-        }
-
-        50% {
-          clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
-        }
-      }
+    .header {
+      font-size: 3rem;
     }
 
-    .takeSeatText {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 12rem;
-      color: rgba(238, 3, 3, 0.71);
-      font-family: 'Montserrat Medium';
-      transform: scale(0.94);
-      animation: scale 5s forwards cubic-bezier(0.5, 1, 0.89, 1) infinite;
-      color: #ffffff;
+    .text {
+      font-size: 1.3rem;
+    }
 
-      text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #ff002b, 5px 0 3px #800015,
-        6px 2px 3px rgba(77, 0, 13, 0.5), 6px 0 9px #ff5500, 8px 0 9px #802a00, 9px 2px 9px rgba(77, 25, 0, 0.5),
-        11px 0 18px #806a00, 12px 2px 18px rgba(77, 66, 0, 0.5), 17px 2px 45px rgba(38, 77, 0, 0.5),
-        2px 2px 2px rgba(54, 9, 50, 0);
+    .catchMeText {
+      margin-right: 1rem;
+      font-size: 26px;
+    }
 
-      @keyframes scale {
-        100% {
-          transform: scale(1);
-        }
-      }
-
-      .h2Text {
-        display: inline-block;
-        opacity: 0;
-        filter: blur(4px);
-
-        &:nth-child(1) {
-          animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-        }
-        &:nth-child(2) {
-          animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-        }
-        &:nth-child(3) {
-          animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-        }
-        &:nth-child(4) {
-          animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-        }
-        &:nth-child(5) {
-          animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-        }
-        &:nth-child(6) {
-          animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-        }
-        &:nth-child(7) {
-          animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-        }
-
-        @keyframes fade-in {
-          100% {
-            opacity: 1;
-            filter: blur(0);
-          }
-        }
+    .icons {
+      margin-right: 1rem;
+      fill: white;
+      width: 30px;
+      height: 30px;
+      &:hover {
+        fill: orange;
       }
     }
-    .catchMe {
-      margin-top: 6rem;
-      color: rgb(221, 198, 198);
-      display: flex;
-      justify-content: center;
+  }
 
-      .catchMeText {
-        margin-right: 1rem;
-        font-size: 26px;
-        //!CZCIONKA DO ZMIANY
-      }
-
-      .icons {
-        margin-right: 1rem;
-        fill: white;
-        &:hover {
-          fill: orange;
-        }
-      }
+  .imageDiv {
+    .image {
+      width: 100%;
+      height: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
   }
 }
