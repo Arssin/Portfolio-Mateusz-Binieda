@@ -1,10 +1,10 @@
 .body {
   min-width: 100%;
-  min-height: 90vh;
+  min-height: 100%;
   background: linear-gradient(-45deg, #c9c0c0, #5f5b5d, #1c1e1f, #39413f);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;

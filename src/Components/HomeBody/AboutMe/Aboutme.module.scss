@@ -1,5 +1,5 @@
 .aboutMeMainDiv {
-  width: 70vw;
+  width: 80vw;
   align-self: center;
   padding: 10px;
   margin: 2rem 0 0 0;
@@ -8,48 +8,71 @@
   .title {
     padding: 5px;
     margin-bottom: 1rem;
+    font-size: 1.9em;
   }
 
   .aboutMe {
     padding: 15px 35px;
     background-color: rgb(95, 92, 92);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 
     .text {
-      flex-grow: 1;
       display: flex;
       align-items: center;
-      width: 80vw;
+      width: 90%;
       text-align: left;
-      border-right: 5px dotted #cccc;
-      font-size: 0.9em;
+      font-size: 1.4em;
+      line-height: 2em;
     }
     .picturediv {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 40vw;
-
-      flex-wrap: wrap;
+      width: 70%;
 
       .pictureText {
-        text-align: left;
         list-style-type: none;
-        font-size: 0.9em;
+        font-size: 1.4em;
+        line-height: 2em;
       }
       .avatar {
-        width: 30%;
+        width: 40%;
         border-radius: 50%;
       }
     }
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .text {
+    border-right: 5px dotted #cccc;
+  }
+  .pictureText {
+    text-align: left;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
-  .aboutMe {
-    flex-wrap: wrap;
+  .aboutMeMainDiv {
+    .aboutMe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+
+      .picturediv {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+
+        .pictureText {
+          border-top: 5px dotted #cccc;
+          border-bottom: 5px dotted #cccc;
+          width: 100%;
+        }
+      }
+    }
   }
 }
