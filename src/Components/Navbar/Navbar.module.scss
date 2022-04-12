@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  min-height: 7vh;
-  font-size: 1.2rem;
   padding: 5px 10px;
   z-index: 5;
   background-color: rgb(124, 119, 119);
@@ -13,21 +11,21 @@
 
   .logo {
     padding: 10px;
-    max-height: 80px;
-    max-width: 80px;
+    max-height: 90px;
+    max-width: 90px;
     &:hover {
       opacity: 0.6;
     }
   }
 
   .navlist {
-    font-size: 1rem;
+    font-size: 1.1em;
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    margin-right: 2rem;
-    gap: 2.3rem;
+    margin-right: 1.5rem;
+    gap: 2rem;
 
     .listanchor {
       text-decoration: none;
@@ -44,7 +42,7 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     .navlist {
       display: none;
       margin: 0;

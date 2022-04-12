@@ -48,8 +48,12 @@
   .text {
     border-right: 5px dotted #cccc;
   }
-  .pictureText {
-    text-align: left;
+
+  .picturediv {
+    margin-left: 0.5rem;
+    .pictureText {
+      text-align: left;
+    }
   }
 }
 
@@ -59,7 +63,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0;
+      padding: 10px 0;
 
       .picturediv {
         display: flex;
@@ -71,6 +75,7 @@
           border-top: 5px dotted #cccc;
           border-bottom: 5px dotted #cccc;
           width: 100%;
+          padding: 10px;
         }
       }
     }
