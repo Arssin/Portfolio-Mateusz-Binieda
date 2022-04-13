@@ -2,6 +2,7 @@ import styles from '../HomeBody/Homebody.module.scss';
 import { Aboutme } from './AboutMe/Aboutme';
 import { Start } from '../HomeBody/Start/Start';
 import { MyProjects } from '../HomeBody/MyProjects/MyProjects';
+import { Skills } from '../HomeBody/Skills/Skills';
 
 export function HomeBody() {
   return (
@@ -12,7 +13,7 @@ export function HomeBody() {
       </div>
       <Start />
       <Aboutme />
-      <section id="skills">Skills</section>
+      <Skills />
       <MyProjects />
       <section id="hobbies">Hobbies</section>
       <section id="contact me">Contact Me</section>
