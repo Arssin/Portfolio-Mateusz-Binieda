@@ -10,10 +10,10 @@ export function HomeBody() {
         <h2 className={styles.welcomeText}>Welcome!</h2>
         <h2 className={styles.welcomeText2}>Welcome!</h2>
       </div>
-      <Start id="home" />
-      <Aboutme id="about" />
-      <MyProjects id="my projects" />
+      <Start />
+      <Aboutme />
       <section id="skills">Skills</section>
+      <MyProjects />
       <section id="hobbies">Hobbies</section>
       <section id="contact me">Contact Me</section>
     </div>

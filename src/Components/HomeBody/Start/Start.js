@@ -4,7 +4,7 @@ import img from '../../../images/image.png';
 
 export const Start = () => {
   return (
-    <section className={styles.home}>
+    <section id="home" className={styles.home}>
       <div className={styles.catchMe}>
         <h1 className={styles.header}>Hello!</h1>
         <span className={styles.text}>
