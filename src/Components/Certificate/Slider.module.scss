@@ -1,34 +1,78 @@
-.certificates {
-  position: relative;
-  height: 100vh;
+.section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 4rem;
+
+  .title {
+    color: white;
+    font-size: 3em;
+  }
+
+  .certificates {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .images {
+    text-align: center;
+    width: 32rem;
+    height: 70vh;
+    border-radius: 20px;
+    padding: 5px;
+  }
+
+  .rightArrow {
+    font-size: 3em;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .leftArrow {
+    font-size: 3em;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .slide {
+    opacity: 0;
+    transition-duration: 2s ease;
+  }
+
+  .slideActive {
+    opacity: 1;
+    transition-duration: 2s;
+    transform: scale(1.08);
+  }
 }
 
-.images {
-  width: 30rem;
-  height: 40rem;
-  border-radius: 10px;
-}
+@media screen and (max-width: 768px) {
+  .section {
+    .certificates {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 6fr 1fr;
+      gap: 10px 0px;
+      grid-template-areas:
+        '. images .'
+        'leftArrow x rightArrow';
+    }
 
-.rightArrow {
-  position: relative;
-  top: 50%;
-  right: 10rem;
-  font-size: 3rem;
-  color: black;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
+    .images {
+      grid-area: images;
+    }
 
-.leftArrow {
-  top: 50%;
-  left: 32px;
-  font-size: 3rem;
-  color: black;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
+    .rightArrow {
+      grid-area: rightArrow;
+    }
+
+    .leftArrow {
+      grid-area: leftArrow;
+    }
+  }
 }
