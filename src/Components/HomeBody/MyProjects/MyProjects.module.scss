@@ -40,9 +40,10 @@
       }
     }
     .span {
+      text-overflow: ellipsis;
       font-size: 2em;
       text-align: center;
-      line-height: 2.4;
+      line-height: 2.8;
       color: rgb(185, 171, 171);
     }
   }

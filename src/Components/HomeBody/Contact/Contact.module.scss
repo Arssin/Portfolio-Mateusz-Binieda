@@ -1,0 +1,28 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 5rem 0;
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    padding: 10px;
+
+    .text {
+      width: 35%;
+      background-color: orange;
+    }
+
+    .contact {
+      width: 35%;
+      background-color: white;
+      border: 5px solid orange;
+    }
+  }
+}
