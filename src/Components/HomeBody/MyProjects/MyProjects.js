@@ -1,6 +1,7 @@
 import styles from '../../HomeBody/MyProjects/MyProjects.module.scss';
 import starwars from '../../../images/raz.png';
 import bking from '../../../images/dwa.png';
+import { BsGithub } from 'react-icons/bs';
 
 export const MyProjects = () => {
   return (
@@ -9,14 +10,20 @@ export const MyProjects = () => {
       <div className={styles.boxDiv}>
         <div className={styles.box}>
           <a className={styles.link} href="https://sturdy-journey-761820ff.pages.github.io/">
-            <img className={styles.image} src={starwars} />
-            <span className={styles.span}> Star Wars Quizz App</span>
+            <img className={styles.image} src={starwars} />{' '}
+          </a>
+          <span className={styles.span}> Star Wars Quizz App</span>
+          <a href="https://github.com/CodersCamp2021/Michal-Team-Projekt-1">
+            <BsGithub className={styles.icons} />
           </a>
         </div>
         <div className={styles.box}>
           <a className={styles.link} href="https://michal-team-projekt-2.netlify.app">
             <img className={styles.image} src={bking} />
-            <span className={styles.span}> Bking - Your Vacation Rentals!</span>
+          </a>
+          <span className={styles.span}> Bking - Your Vacation Rentals!</span>
+          <a href="https://github.com/CodersCamp2021/michal-team-projekt-2">
+            <BsGithub className={styles.icons} />
           </a>
         </div>
         <div className={styles.box}>
