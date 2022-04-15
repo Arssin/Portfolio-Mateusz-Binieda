@@ -1,0 +1,27 @@
+$btn-width: 250px !default;
+$btn-height: 80px !default;
+$btn-full: $btn-height + $btn-width !default;
+$btn-half: $btn-full/2 !default;
+$bg-color: #eeeeee !default;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  background-color: white;
+  border: 5px solid orange;
+  padding: 15px 10px;
+
+  .inputs {
+    display: flex;
+    width: 50%;
+    height: 5%;
+    border: none;
+    background-color: rgba(243, 239, 239, 0.425);
+  }
+
+  .button {
+  }
+}

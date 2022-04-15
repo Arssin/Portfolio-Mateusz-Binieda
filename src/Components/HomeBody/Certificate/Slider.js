@@ -1,4 +1,4 @@
-import { SliderData } from '../Certificate/SliderData';
+import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import { useState } from 'react';
 import styles from './Slider.module.scss';
