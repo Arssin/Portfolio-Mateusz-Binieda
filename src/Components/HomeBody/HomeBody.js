@@ -3,6 +3,8 @@ import { Aboutme } from './AboutMe/Aboutme';
 import { Start } from '../HomeBody/Start/Start';
 import { MyProjects } from '../HomeBody/MyProjects/MyProjects';
 import { Skills } from '../HomeBody/Skills/Skills';
+import { Slider } from '../Certificate/Slider';
+import { SliderData } from '../Certificate/SliderData';
 
 export function HomeBody() {
   return (
@@ -15,6 +17,7 @@ export function HomeBody() {
       <Aboutme />
       <Skills />
       <MyProjects />
+      <Slider slides={SliderData} />
       <section id="hobbies">Hobbies</section>
       <section id="contact me">Contact Me</section>
     </div>
