@@ -20,17 +20,21 @@ export const Slider = ({ slides }) => {
     return null;
   }
   return (
-    <section id="certificates">
+    <section className={styles.section} id="certificates">
       <h1 className={styles.title}>Certyfikaty</h1>
-      <FaArrowAltCircleLeft className={styles.leftArrow} onClick={prevSlide} />
-      <FaArrowAltCircleRight className={styles.rightArrow} onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
-        return (
-          <div className={index === state ? 'slide active' : ' slide'} key={index}>
-            {index === state && <img src={slide.image} alt="certificates" className={styles.images} />}
-          </div>
-        );
-      })}
+      <div className={styles.certificates}>
+        <FaArrowAltCircleLeft className={styles.leftArrow} onClick={prevSlide} />
+        <div>
+          {SliderData.map((slide, index) => {
+            return (
+              <div className={index === state ? styles.slideActive : styles.slide} key={index}>
+                {index === state && <img src={slide.image} alt="certificates" className={styles.images} />}
+              </div>
+            );
+          })}
+        </div>
+        <FaArrowAltCircleRight className={styles.rightArrow} onClick={nextSlide} />
+      </div>
     </section>
   );
 };
