@@ -13,6 +13,7 @@
 
     .link {
       text-decoration: none;
+      line-height: 3;
     }
 
     .box {
@@ -22,9 +23,17 @@
       margin: 0 1.5%;
       box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
       line-height: 0;
+      padding: 10px 0;
 
       &:hover {
         flex: 1 1 50%;
+      }
+
+      .span {
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 3;
+        color: rgb(185, 171, 171);
       }
     }
 
@@ -39,23 +48,56 @@
         height: 100%;
       }
     }
-    .span {
-      text-overflow: ellipsis;
-      font-size: 2em;
-      text-align: center;
-      line-height: 2.8;
-      color: rgb(185, 171, 171);
+  }
+
+  .icons {
+    margin-left: 0.5rem;
+    fill: white;
+    width: 25px;
+    height: 25px;
+    &:hover {
+      fill: rgb(114, 114, 182);
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container {
     .boxDiv {
-      height: 55vh;
-      .span {
-        font-size: 1em;
+      height: 60vh;
+
+      .box {
+        .span {
+          font-size: 1em;
+          line-height: 2;
+        }
       }
+    }
+    .icons {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    .boxDiv {
+      height: 50vh;
+      .link {
+        line-height: 2.5;
+      }
+
+      .box {
+        .span {
+          font-size: 0.7em;
+          line-height: 2;
+        }
+      }
+    }
+    .icons {
+      width: 20px;
+      height: 20px;
     }
   }
 }
