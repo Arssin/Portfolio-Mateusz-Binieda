@@ -11,17 +11,22 @@ $bg-color: #eeeeee !default;
   justify-content: space-around;
   width: 35%;
   background-color: white;
-  border: 5px solid orange;
-  padding: 15px 10px;
+  border-radius: 0px 27px 27px 0px;
+  -webkit-box-shadow: inset 0px 0px 27px 12px orange;
+  box-shadow: inset 0px 0px 27px 12px orange;
+  padding: 25px 10px;
 
-  .inputs {
+  .div {
     display: flex;
-    width: 50%;
-    height: 5%;
-    border: none;
-    background-color: rgba(243, 239, 239, 0.425);
-  }
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 60%;
 
-  .button {
+    .input {
+      height: 2rem;
+    }
+    .message {
+      resize: none;
+    }
   }
 }
