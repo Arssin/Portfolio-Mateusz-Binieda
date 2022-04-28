@@ -1,38 +1,41 @@
-import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 import styles from './ContactForm.module.scss';
 
 export function ContactForm() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'Portfolio-MB', form.current, '072amLaSZWMrYWE3v').then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      },
+    );
+    e.target.reset();
+  };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-      <input
-        className={styles.inputs}
-        type="text"
-        placeholder="Name"
-        {...register('Name', { required: true, min: 3, maxLength: 80 })}
-      />
-      <input
-        className={styles.inputs}
-        type="text"
-        placeholder="Your Email"
-        {...register('Your Email', { required: true, min: 3, pattern: /^\S+@\S+$/i })}
-      />
-      <input
-        className={styles.inputs}
-        type="text"
-        placeholder="Topic"
-        {...register('Topic', { required: true, min: 3 })}
-      />
-      <textarea className={styles.inputs} {...register('Message', { required: true, min: 3 })} />
-
-      <input className={styles.button} type="submit" />
+    <form ref={form} className={styles.form} onSubmit={sendEmail}>
+      <div className={styles.div}>
+        <input placeholder="Name" className={styles.input} type="text" name="name" />
+      </div>
+      <div className={styles.div}>
+        <input placeholder="Email" className={styles.input} type="email" name="email" />
+      </div>
+      <div className={styles.div}>
+        <input placeholder="Subject" className={styles.input} type="text" name="subject" />
+      </div>
+      <div className={styles.div}>
+        <textarea className={styles.message} placeholder="Message" name="message" />
+      </div>
+      <div>
+        <input type="submit" value="Send" />
+      </div>
     </form>
   );
 }
