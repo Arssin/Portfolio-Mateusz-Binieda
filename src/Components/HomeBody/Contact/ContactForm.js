@@ -22,16 +22,16 @@ export function ContactForm() {
   return (
     <form ref={form} className={styles.form} onSubmit={sendEmail}>
       <div className={styles.div}>
-        <input placeholder="Name" className={styles.input} type="text" name="name" />
+        <input placeholder="&nbsp;Name" className={styles.input} type="text" name="name" />
       </div>
       <div className={styles.div}>
-        <input placeholder="Email" className={styles.input} type="email" name="email" />
+        <input placeholder="&nbsp;Email" className={styles.input} type="email" name="email" />
       </div>
       <div className={styles.div}>
-        <input placeholder="Subject" className={styles.input} type="text" name="subject" />
+        <input placeholder="&nbsp;Subject" className={styles.input} type="text" name="subject" />
       </div>
       <div className={styles.div}>
-        <textarea className={styles.message} placeholder="Message" name="message" />
+        <textarea className={styles.message} placeholder="&nbsp;Message" name="message" />
       </div>
       <div>
         <input type="submit" value="Send" />
