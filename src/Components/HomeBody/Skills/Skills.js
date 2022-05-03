@@ -6,7 +6,7 @@ import styles from './Skills.module.scss';
 export const Skills = () => {
   return (
     <section id="skills">
-      <h1>Skills</h1>
+      <h2>Skills</h2>
       <div className={styles.slider}>
         <div className={styles.slidetrack}>
           <div className={styles.slide}>
