@@ -1,6 +1,6 @@
 :root {
-  --clr-neon: hsl(317 100% 54%);
-  --clr-bg: hsl(323 21% 16%);
+  --clr-animate: rgb(172, 226, 85);
+  --clr-bg: rgb(207, 195, 203);
 }
 
 .container {
@@ -9,10 +9,99 @@
   border-radius: 27px 0px 0px 27px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5px 30px;
 
   .text {
+    padding: 60px;
     font-size: 1.3em;
+  }
+
+  .divBtn {
+    .findMe {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-around;
+    }
+    .button {
+      position: relative;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(209, 123, 123);
+      margin: 15px;
+      transition: 1s;
+      overflow: hidden;
+      text-decoration: none;
+      height: 4rem;
+      width: 40%;
+
+      .span {
+        position: relative;
+        z-index: 1;
+        font-size: 1.2em;
+        color: white;
+        opacity: 0.5;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        .icons {
+          width: 20px;
+          height: 20px;
+          color: rgb(20, 20, 92);
+        }
+      }
+
+      &:hover {
+        background: var(--clr-animate);
+        box-shadow: 0 0 10px var(--clr-animate), 0 0 30px var(--clr-animate), 0 0 60px var(--clr-animate),
+          0 0 100px var(--clr-animate);
+
+        &::before {
+          width: 120%;
+        }
+
+        &::after {
+          background: var(--clr-bg);
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 400%;
+        background: var(--clr-animate);
+        transition: 1s;
+        animation: animate 2s linear infinite;
+      }
+
+      &::after {
+        content: '';
+        inset: 4px;
+        background: rgb(139, 67, 67);
+        position: absolute;
+        transition: 0.5s;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
   }
 }
