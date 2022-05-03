@@ -21,6 +21,7 @@ export function ContactForm() {
 
   return (
     <form ref={form} className={styles.form} onSubmit={sendEmail}>
+      <div className={styles.title}>Leave me a message! </div>
       <div className={styles.div}>
         <input placeholder="&nbsp;Name" className={styles.input} type="text" name="name" />
       </div>
@@ -33,8 +34,8 @@ export function ContactForm() {
       <div className={styles.div}>
         <textarea className={styles.message} placeholder="&nbsp;Message" name="message" />
       </div>
-      <div>
-        <input type="submit" value="Send" />
+      <div className={styles.div}>
+        <input type="submit" value="Send" className={styles.sendBtn} />
       </div>
     </form>
   );
