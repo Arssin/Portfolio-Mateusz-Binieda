@@ -9,17 +9,13 @@ import { Contact } from './Contact/Contact';
 
 export function HomeBody() {
   return (
-    <div>
-      <div className={styles.start}>
-        <Start />
-      </div>
-      <div className={styles.sections}>
-        <Aboutme />
-        <Skills />
-        <MyProjects />
-        <Slider slides={SliderData} />
-        <Contact />
-      </div>
+    <div className={styles.sections}>
+      <Start />
+      <Aboutme />
+      <Skills />
+      <MyProjects />
+      <Slider slides={SliderData} />
+      <Contact />
     </div>
   );
 }
