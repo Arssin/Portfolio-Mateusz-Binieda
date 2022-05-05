@@ -5,8 +5,23 @@ import img from '../../../images/image.png';
 export const Start = () => {
   return (
     <section id="home" className={styles.home}>
+      <ul className={styles.circles}>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+      </ul>
       <div className={styles.catchMe}>
-        <h1 className={styles.header}>Hello!</h1>
+        <div className={styles.title}>
+          <h2 className={styles.welcomeText}>Welcome!</h2>
+          <h2 className={styles.welcomeText2}>Welcome!</h2>
+        </div>
         <span className={styles.text}>
           My name is Mateusz Binięda. Lorem ipsum dolor sit amet, consectetur adipiscing, lorem ipsum dolor sit amet,
           consectetur adip, lorem ipsum dolor sit am, consectetur adip, lorem ipsum dolor sit am, lorem ipsum dolor
