@@ -2,12 +2,18 @@ import { RiReactjsFill, RiHtml5Fill } from 'react-icons/ri';
 import { FaSass, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
 import { SiTypescript, SiJavascript, SiJest, SiRedux, SiGit, SiDocker } from 'react-icons/si';
 import styles from './Skills.module.scss';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export const Skills = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section id="skills">
       <h2>Skills</h2>
-      <div className={styles.slider}>
+      <div data-aos="fade-up" className={styles.slider}>
         <div className={styles.slidetrack}>
           <div className={styles.slide}>
             <RiReactjsFill className={styles.icon} />

@@ -2,12 +2,18 @@ import styles from '../../HomeBody/MyProjects/MyProjects.module.scss';
 import starwars from '../../../images/raz.png';
 import bking from '../../../images/dwa.png';
 import { BsGithub } from 'react-icons/bs';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export const MyProjects = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section id="my projects" className={styles.container}>
       <h1 className={styles.title}>My Projects</h1>
-      <div className={styles.boxDiv}>
+      <div data-aos="fade-up" className={styles.boxDiv}>
         <div className={styles.box}>
           <a className={styles.link} href="https://sturdy-journey-761820ff.pages.github.io/">
             <img className={styles.image} src={starwars} />{' '}

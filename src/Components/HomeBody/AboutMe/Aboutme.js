@@ -1,11 +1,17 @@
 import styles from '../AboutMe/Aboutme.module.scss';
 import avatar from '../../../images/avatar.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export function Aboutme() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section id="about" className={styles.aboutMeMainDiv}>
       <h2 className={styles.title}>About Me</h2>
-      <div className={styles.aboutMe}>
+      <div data-aos="zoom-out-up" className={styles.aboutMe}>
         <div className={styles.text}>
           🎓 I have a Masters Degree in Logistics and have found my passion in developing programming skills.
           <br />
@@ -22,7 +28,7 @@ export function Aboutme() {
             <li>+48 695 890 109</li>
             <li>mateusz.binieda@onet.pl</li>
           </ul>
-          <img src={avatar} alt="avatar" className={styles.avatar} />
+          <img data-aos="slide-left" src={avatar} alt="avatar" className={styles.avatar} />
         </div>
       </div>
     </section>
