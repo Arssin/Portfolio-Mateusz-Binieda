@@ -3,8 +3,15 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import { useState } from 'react';
 import styles from './Slider.module.scss';
 import PropTypes from 'prop-types';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export const Slider = ({ slides }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   const [state, setState] = useState(0);
   const length = slides.length;
 
@@ -22,7 +29,7 @@ export const Slider = ({ slides }) => {
   return (
     <section className={styles.section} id="certificates">
       <h1 className={styles.title}>Certyfikaty</h1>
-      <div className={styles.certificates}>
+      <div data-aos="fade-up" className={styles.certificates}>
         <FaArrowAltCircleLeft className={styles.leftArrow} onClick={prevSlide} />
         <div>
           {SliderData.map((slide, index) => {

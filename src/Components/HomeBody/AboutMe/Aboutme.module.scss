@@ -39,6 +39,8 @@
       .avatar {
         width: 40%;
         border-radius: 50%;
+        // transform: translateX(-50%);
+        transform: translateX(50%) 2s;
       }
     }
   }

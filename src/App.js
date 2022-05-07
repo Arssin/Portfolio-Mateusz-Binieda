@@ -1,4 +1,3 @@
-import './App.css';
 import { Layout } from './Components/Layout/Layout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

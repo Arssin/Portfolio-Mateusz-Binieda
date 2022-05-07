@@ -1,10 +1,16 @@
 import styles from '../Start/Start.module.scss';
 import { BsInstagram, BsGithub, BsLinkedin, BsFacebook } from 'react-icons/bs';
 import img from '../../../images/image.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export const Start = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <section id="home" className={styles.home}>
+    <section data-aos="zoom-out-up" id="home" className={styles.home}>
       <ul className={styles.circles}>
         <li className={styles.list}></li>
         <li className={styles.list}></li>
@@ -18,7 +24,7 @@ export const Start = () => {
         <li className={styles.list}></li>
       </ul>
       <div className={styles.catchMe}>
-        <div className={styles.title}>
+        <div data-aos="flip-up" className={styles.title}>
           <h2 className={styles.welcomeText}>Welcome!</h2>
           <h2 className={styles.welcomeText2}>Welcome!</h2>
         </div>
@@ -47,7 +53,7 @@ export const Start = () => {
           </a>
         </span>
       </div>
-      <div className={styles.imageDiv}>
+      <div data-aos="slide-left" className={styles.imageDiv}>
         <img src={img} className={styles.image} alt="welcome image" />
       </div>
     </section>
