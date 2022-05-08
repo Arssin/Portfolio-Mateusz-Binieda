@@ -1,11 +1,7 @@
-import cert from '../../../images/certyfikat.png';
-import cert2 from '../../../images/certyfikat2.jpg';
+import certyfikat from '../../../images/certyfikat.png';
+import certyfikat1 from '../../../images/certyfikat1.png';
+import certyfikat2 from '../../../images/certyfikat2.png';
+import certyfikat3 from '../../../images/certyfikat3.jpg';
+import certyfikat4 from '../../../images/certyfikat4.jpg';
 
-export const SliderData = [
-  {
-    image: cert,
-  },
-  {
-    image: cert2,
-  },
-];
+export default [certyfikat, certyfikat1, certyfikat2, certyfikat3, certyfikat4];

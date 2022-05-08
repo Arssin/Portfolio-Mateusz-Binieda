@@ -1,78 +1,25 @@
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
+  margin: 5% 20%;
+  .carousel {
+    cursor: grab;
+    overflow: hidden;
+    background: rgb(196, 161, 67);
+    .innerCarousel {
+      display: flex;
+      background: lightblue;
+      .item {
+        min-height: 40rem;
+        min-width: 30rem;
+        width: 33%;
+        padding: 40px;
 
-  .title {
-    color: white;
-    font-size: 3em;
-  }
-
-  .certificates {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .images {
-    text-align: center;
-    width: 32rem;
-    height: 70vh;
-    border-radius: 20px;
-    padding: 5px;
-  }
-
-  .rightArrow {
-    font-size: 3em;
-    color: black;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .leftArrow {
-    font-size: 3em;
-    color: black;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .slide {
-    opacity: 0;
-    transition-duration: 2s ease;
-  }
-
-  .slideActive {
-    opacity: 1;
-    transition-duration: 2s;
-    transform: scale(1.08);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .section {
-    .certificates {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 6fr 1fr;
-      gap: 10px 0px;
-      grid-template-areas:
-        '. images .'
-        'leftArrow x rightArrow';
-    }
-
-    .images {
-      grid-area: images;
-    }
-
-    .rightArrow {
-      grid-area: rightArrow;
-    }
-
-    .leftArrow {
-      grid-area: leftArrow;
+        .img {
+          width: 100%;
+          height: 100%;
+          border-radius: 2rem;
+          pointer-events: none;
+        }
+      }
     }
   }
 }

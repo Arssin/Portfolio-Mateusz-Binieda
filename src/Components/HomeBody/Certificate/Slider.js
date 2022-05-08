@@ -1,52 +1,36 @@
-import { SliderData } from './SliderData';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import { useState } from 'react';
+// import { SliderData } from './SliderData';
+// import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+// import { useState } from 'react';
 import styles from './Slider.module.scss';
-import PropTypes from 'prop-types';
-import Aos from 'aos';
+// import PropTypes from 'prop-types';
+// import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import certyficates from './SliderData.js';
+import { motion } from 'framer-motion';
+// import { useRef, useEffect } from 'react';
 
-export const Slider = ({ slides }) => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+export function Slider() {
+  // const [width, setWidth] = useState(0);
+  // const carousel = useRef();
 
-  const [state, setState] = useState(0);
-  const length = slides.length;
+  // useEffect(() => {
+  //   console.log(carousel.current.scrollWidth);
+  // }, []);
 
-  const nextSlide = () => {
-    setState(state === length - 1 ? 0 : state + 1);
-  };
-
-  const prevSlide = () => {
-    setState(state === 0 ? length - 1 : state - 1);
-  };
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
   return (
-    <section className={styles.section} id="certificates">
-      <h1 className={styles.title}>Certyfikaty</h1>
-      <div data-aos="fade-up" className={styles.certificates}>
-        <FaArrowAltCircleLeft className={styles.leftArrow} onClick={prevSlide} />
-        <div>
-          {SliderData.map((slide, index) => {
+    <section className={styles.section}>
+      <h2> Certificate</h2>
+      <motion.div className={styles.carousel}>
+        <motion.div drag="x" dragConstraints={{ right: 0 }} className={styles.innerCarousel}>
+          {certyficates.map((image, index) => {
             return (
-              <div className={index === state ? styles.slideActive : styles.slide} key={index}>
-                {index === state && <img src={slide.image} alt="certificates" className={styles.images} />}
-              </div>
+              <motion.div key={index} className={styles.item}>
+                <img className={styles.img} src={image} alt="" />
+              </motion.div>
             );
           })}
-        </div>
-        <FaArrowAltCircleRight className={styles.rightArrow} onClick={nextSlide} />
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
-};
-
-Slider.propTypes = {
-  slides: PropTypes.array,
-  length: PropTypes.number,
-};
+}
