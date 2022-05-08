@@ -5,7 +5,7 @@
 
 .container {
   width: 35%;
-  background-color: orange;
+  background-color: rgb(53, 146, 189);
   border-radius: 27px 0px 0px 27px;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: rgb(209, 123, 123);
+      background: #5f5b5d;
       margin: 15px;
       transition: 1s;
       overflow: hidden;
@@ -89,7 +89,7 @@
       &::after {
         content: '';
         inset: 4px;
-        background: rgb(139, 67, 67);
+        background: #5f5b5d;
         position: absolute;
         transition: 0.5s;
       }

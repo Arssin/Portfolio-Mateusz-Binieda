@@ -1,6 +1,6 @@
 import styles from '../Start/Start.module.scss';
 import { BsInstagram, BsGithub, BsLinkedin, BsFacebook } from 'react-icons/bs';
-import img from '../../../images/image.png';
+import img from '../../../images/picture.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
