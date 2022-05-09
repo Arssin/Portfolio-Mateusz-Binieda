@@ -1,6 +1,7 @@
 import styles from '../../HomeBody/MyProjects/MyProjects.module.scss';
 import starwars from '../../../images/raz.png';
 import bking from '../../../images/dwa.png';
+import snake from '../../../images/snake.png';
 import { BsGithub } from 'react-icons/bs';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -12,14 +13,14 @@ export const MyProjects = () => {
   }, []);
   return (
     <section id="my projects" className={styles.container}>
-      <h1 className={styles.title}>My Projects</h1>
+      <p className={styles.title}>My Projects</p>
       <div data-aos="fade-up" className={styles.boxDiv}>
         <div className={styles.box}>
           <a className={styles.link} href="https://sturdy-journey-761820ff.pages.github.io/">
             <img className={styles.image} src={starwars} />{' '}
           </a>
           <span className={styles.span}> Star Wars Quizz App</span>
-          <a href="https://github.com/CodersCamp2021/Michal-Team-Projekt-1">
+          <a href="https://github.com/Arssin/Star-Wars-Quizz-App-CodersCamp-2021-2022">
             <BsGithub className={styles.icons} />
           </a>
         </div>
@@ -28,12 +29,47 @@ export const MyProjects = () => {
             <img className={styles.image} src={bking} />
           </a>
           <span className={styles.span}> Bking - Your Vacation Rentals!</span>
-          <a href="https://github.com/CodersCamp2021/michal-team-projekt-2">
+          <a href="https://github.com/Arssin/Bking-App-CodersCamp-2021-2022">
             <BsGithub className={styles.icons} />
           </a>
         </div>
         <div className={styles.box}>
-          <img className={styles.image} src={bking} />
+          <a className={styles.link} href="https://snake-game-practice-mateusz-binieda.vercel.app/">
+            <img className={styles.image} src={snake} />
+          </a>
+          <span className={styles.span}> Very Simple Snake Game</span>
+          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda">
+            <BsGithub className={styles.icons} />
+          </a>
+        </div>
+      </div>
+      <div data-aos="fade-up" className={styles.boxDiv}>
+        <div className={styles.box}>
+          <a className={styles.link} href="https://snake-game-practice-mateusz-binieda.vercel.app/">
+            <img className={styles.image} src={snake} />
+          </a>
+          <span className={styles.span}> Very Simple Snake Game</span>
+          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda">
+            <BsGithub className={styles.icons} />
+          </a>
+        </div>
+        <div className={styles.box}>
+          <a className={styles.link} href="https://snake-game-practice-mateusz-binieda.vercel.app/">
+            <img className={styles.image} src={snake} />
+          </a>
+          <span className={styles.span}> Very Simple Snake Game</span>
+          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda">
+            <BsGithub className={styles.icons} />
+          </a>
+        </div>
+        <div className={styles.box}>
+          <a className={styles.link} href="https://snake-game-practice-mateusz-binieda.vercel.app/">
+            <img className={styles.image} src={snake} />
+          </a>
+          <span className={styles.span}> Very Simple Snake Game</span>
+          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda">
+            <BsGithub className={styles.icons} />
+          </a>
         </div>
       </div>
     </section>

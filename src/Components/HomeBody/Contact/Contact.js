@@ -11,7 +11,7 @@ export const Contact = () => {
   }, []);
   return (
     <section className={styles.section} id="contact me">
-      <h1 className={styles.title}>Contact Me</h1>
+      <p className={styles.title}>contact Me</p>
       <div data-aos="fade-up" className={styles.container}>
         <ContactLeftSide />
         <ContactForm />
