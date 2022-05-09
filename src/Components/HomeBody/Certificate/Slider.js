@@ -7,21 +7,21 @@ import styles from './Slider.module.scss';
 import 'aos/dist/aos.css';
 import certyficates from './SliderData.js';
 import { motion } from 'framer-motion';
-// import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 export function Slider() {
-  // const [width, setWidth] = useState(0);
-  // const carousel = useRef();
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
 
-  // useEffect(() => {
-  //   console.log(carousel.current.scrollWidth);
-  // }, []);
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
 
   return (
     <section className={styles.section}>
       <h2> Certificate</h2>
-      <motion.div className={styles.carousel}>
-        <motion.div drag="x" dragConstraints={{ right: 0 }} className={styles.innerCarousel}>
+      <motion.div className={styles.carousel} ref={carousel} whileTap={{ cursor: 'grabbing' }}>
+        <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className={styles.innerCarousel}>
           {certyficates.map((image, index) => {
             return (
               <motion.div key={index} className={styles.item}>
