@@ -3,10 +3,10 @@
   .carousel {
     cursor: grab;
     overflow: hidden;
-    background: rgb(196, 161, 67);
+
     .innerCarousel {
       display: flex;
-      background: lightblue;
+
       .item {
         min-height: 40rem;
         min-width: 30rem;
