@@ -12,7 +12,7 @@ export const Skills = () => {
   }, []);
   return (
     <section id="skills">
-      <h2>Skills</h2>
+      <p className={styles.title}>skills</p>
       <div data-aos="fade-up" className={styles.slider}>
         <div className={styles.slidetrack}>
           <div className={styles.slide}>
