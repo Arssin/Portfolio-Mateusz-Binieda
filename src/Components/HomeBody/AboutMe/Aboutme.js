@@ -10,7 +10,7 @@ export function Aboutme() {
   }, []);
   return (
     <section id="about" className={styles.aboutMeMainDiv}>
-      <h2 className={styles.title}>about Me</h2>
+      <h2 className={styles.title}>about me</h2>
       <div data-aos="zoom-out-up" className={styles.aboutMe}>
         <div className={styles.text}>
           🎓 I have a Masters Degree in Logistics and have found my passion in developing programming skills.
