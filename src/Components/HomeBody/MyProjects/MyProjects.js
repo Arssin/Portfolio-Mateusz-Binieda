@@ -13,7 +13,7 @@ export const MyProjects = () => {
   }, []);
   return (
     <section id="my projects" className={styles.container}>
-      <p className={styles.title}>My Projects</p>
+      <p className={styles.title}>my projects</p>
       <div data-aos="fade-up" className={styles.boxDiv}>
         <div className={styles.box}>
           <a className={styles.link} href="https://sturdy-journey-761820ff.pages.github.io/">

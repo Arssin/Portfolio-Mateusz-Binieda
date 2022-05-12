@@ -1,5 +1,15 @@
+.section {
+  min-height: 40vh;
+}
+
 .title {
+  padding: 5px;
+  margin-bottom: 2rem;
+  font-size: 2.9em;
   text-transform: uppercase;
+  font-family: 'Bebas Neue';
+  color: rgb(235, 199, 153);
+  letter-spacing: 0.2rem;
 }
 
 .slider {

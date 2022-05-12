@@ -28,14 +28,10 @@ export const Start = () => {
           <h2 className={styles.welcomeText}>Welcome!</h2>
           <h2 className={styles.welcomeText2}>Welcome!</h2>
         </div>
-        <span className={styles.text}>
-          My name is Mateusz Binięda. Lorem ipsum dolor sit amet, consectetur adipiscing, lorem ipsum dolor sit amet,
-          consectetur adip, lorem ipsum dolor sit am, consectetur adip, lorem ipsum dolor sit am, lorem ipsum dolor
-          sit,lorem ipsum dolor sit am, consectetur adip, lorem ipsum dolor sit am, lorem ipsum dolor sit,lorem ipsum
-          dolor sit am, consectetur adip, lorem ipsum dolor sit am, lorem ipsum dolor sit,lorem ipsum dolor sit am,
-          consectetur adip, lorem ipsum dolor sit am, lorem ipsum dolor sit,lorem ipsum dolor sit am, consectetur adip,
-          lorem ipsum dolor sit am, lorem ipsum dolor sit,lorem ipsum dolor sit am, consectetur adip, lorem ipsum dolor
-          sit am, lorem ipsum dolor sit
+        <span data-aos="flip-right" className={styles.text}>
+          My name is Mateusz Binięda. I am a Master of Logistics who has found his passion in programming. I am eager to
+          develop my skills and look for new challenges. I started my programming adventure 6 months ago with the start
+          of Coders Camp. In my spare time I devote myself to another hobby which is Brazilian Jiu-Jitsu.
         </span>
         <span>
           <h2 className={styles.catchMeText}>Catch me via: </h2>
