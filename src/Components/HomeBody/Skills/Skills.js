@@ -11,7 +11,7 @@ export const Skills = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section id="skills">
+    <section id="skills" className={styles.section}>
       <p className={styles.title}>skills</p>
       <div data-aos="fade-up" className={styles.slider}>
         <div className={styles.slidetrack}>

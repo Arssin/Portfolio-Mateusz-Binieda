@@ -1,6 +1,17 @@
 .section {
   margin: 5% 20%;
+
+  .title {
+    padding: 5px;
+    margin-bottom: 2rem;
+    font-size: 2.9em;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    color: rgb(235, 199, 153);
+    letter-spacing: 0.2rem;
+  }
   .carousel {
+    box-shadow: 8px 0px 40px 15px rgba(235, 199, 153, 0.3);
     cursor: grab;
     overflow: hidden;
 

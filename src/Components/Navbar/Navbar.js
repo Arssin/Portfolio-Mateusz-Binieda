@@ -10,7 +10,7 @@ export function Navbar() {
         <img className={styles.logo} src={logo} alt="Logo" />
       </Link>
       <ul className={styles.navlist}>
-        {['home', 'about', 'my projects', 'skills', 'certificates', 'contact me'].map((item) => (
+        {['home', 'about', 'skills', 'my projects', 'certificates', 'contact me'].map((item) => (
           <li key={`link-${item}`}>
             <div />
             <a className={styles.listanchor} href={`#${item}`}>
