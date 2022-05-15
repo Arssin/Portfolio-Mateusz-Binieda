@@ -14,6 +14,8 @@
 
   .navlist {
     display: flex;
+    align-items: center;
+    text-align: center;
     list-style: none;
 
     .list {
@@ -21,15 +23,25 @@
       text-transform: uppercase;
       opacity: 1;
 
+      @media screen and (max-width: 1024px) {
+        font-size: 0.9em;
+      }
+
       &:hover {
         opacity: 0.6;
       }
 
       .listanchor {
         text-decoration: none;
+        color: white;
+        font-family: 'Bebas Neue';
+        letter-spacing: 0.25rem;
+        font-size: 1.1em;
+
         &:hover {
+          color: rgb(145, 25, 145);
           transition: border-bottom 2s;
-          border-bottom: 3px solid red;
+          border-bottom: 3px solid;
         }
       }
     }
@@ -63,6 +75,15 @@
       &Disabled {
         display: none;
       }
+      .list {
+        margin-top: 0.2rem;
+        .listanchor {
+          font-size: 0.9em;
+        }
+      }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
 }

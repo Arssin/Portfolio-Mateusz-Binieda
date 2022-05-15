@@ -4,7 +4,7 @@ import logo from '../../images/Logo.png';
 import { useState } from 'react';
 import { Hamburger } from '../Navbar/Hamburger.js';
 export function Navbar() {
-  const [hamburgerIsOpen, hamburgerSetIsOpen] = useState(false);
+  const [hamburgerIsOpen, hamburgerSetIsOpen] = useState(true);
   const toggleHamburger = () => hamburgerSetIsOpen(!hamburgerIsOpen);
 
   return (
