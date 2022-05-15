@@ -12,7 +12,7 @@ export function Navbar() {
       <Link to="/">
         <img className={styles.logo} src={logo} alt="Logo" />
       </Link>
-      <ul className={styles.navlist}>
+      <ul className={hamburgerIsOpen ? `${styles.navlist} ${styles.navlistDisabled}` : `${styles.navlist}`}>
         {['home', 'about', 'skills', 'my projects', 'certificates', 'contact me'].map((item) => (
           <li className={styles.list} key={`link-${item}`}>
             <a className={styles.listanchor} href={`#${item}`}>
@@ -21,7 +21,7 @@ export function Navbar() {
           </li>
         ))}
       </ul>
-      <Hamburger className={styles.hamburger} isOpen={hamburgerIsOpen} onClick={toggleHamburger} />
+      <Hamburger isOpen={hamburgerIsOpen} onClick={toggleHamburger} />
     </nav>
   );
 }
