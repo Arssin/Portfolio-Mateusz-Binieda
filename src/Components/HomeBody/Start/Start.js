@@ -33,7 +33,7 @@ export const Start = () => {
           develop my skills and look for new challenges. I started my programming adventure 6 months ago with the start
           of Coders Camp. In my spare time I devote myself to another hobby which is Brazilian Jiu-Jitsu.
         </span>
-        <span>
+        <span className={styles.catchMeSpan}>
           <h2 className={styles.catchMeText}>Catch me via: </h2>
           <a href="https://www.facebook.com/mateusz.binieda.14/">
             <BsFacebook className={styles.icons} />
