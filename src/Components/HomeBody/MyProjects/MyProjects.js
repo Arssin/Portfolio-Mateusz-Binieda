@@ -16,59 +16,84 @@ export const MyProjects = () => {
       <p className={styles.title}>my projects</p>
       <div data-aos="fade-up" className={styles.boxDiv}>
         <div className={styles.box}>
-          <a className={styles.link} href="https://sturdy-journey-761820ff.pages.github.io/">
-            <img className={styles.image} src={starwars} />{' '}
+          <a
+            className={styles.link}
+            href="https://sturdy-journey-761820ff.pages.github.io/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img className={styles.image} src={starwars} alt="Picture star wars quizz project" />
           </a>
           <span className={styles.span}> Star Wars Quizz App</span>
-          <a href="https://github.com/Arssin/Star-Wars-Quizz-App-CodersCamp-2021-2022">
-            <BsGithub className={styles.icons} />
+          <a href="https://github.com/Arssin/Star-Wars-Quizz-App-CodersCamp-2021-2022" rel="noreferrer" target="_blank">
+            <BsGithub className={styles.icons} alt="Clickable Github icon Star Wars Quizz App" />
           </a>
         </div>
         <div className={styles.box}>
-          <a className={styles.link} href="https://michal-team-projekt-2.netlify.app">
-            <img className={styles.image} src={bking} />
+          <a className={styles.link} href="https://michal-team-projekt-2.netlify.app" rel="noreferrer" target="_blank">
+            <img className={styles.image} src={bking} alt="Picture of Bking project" />
           </a>
           <span className={styles.span}> Bking - Your Vacation Rentals!</span>
-          <a href="https://github.com/Arssin/Bking-App-CodersCamp-2021-2022">
-            <BsGithub className={styles.icons} />
+          <a href="https://github.com/Arssin/Bking-App-CodersCamp-2021-2022" rel="noreferrer" target="_blank">
+            <BsGithub className={styles.icons} alt="Clickable Github icon Bking" />
           </a>
         </div>
         <div className={styles.box}>
-          <a className={styles.link} href="https://snake-game-practice-mateusz-binieda.vercel.app/">
-            <img className={styles.image} src={snake} />
+          <a
+            className={styles.link}
+            href="https://snake-game-practice-mateusz-binieda.vercel.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img className={styles.image} src={snake} alt="Picture of snake project" />
           </a>
           <span className={styles.span}> Very Simple Snake Game</span>
-          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda">
-            <BsGithub className={styles.icons} />
+          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda" rel="noreferrer" target="_blank">
+            <BsGithub className={styles.icons} alt="Clickable Github icon, snake game" />
           </a>
         </div>
       </div>
       <div data-aos="fade-up" className={styles.boxDiv}>
         <div className={styles.box}>
-          <a className={styles.link} href="https://snake-game-practice-mateusz-binieda.vercel.app/">
-            <img className={styles.image} src={snake} />
+          <a
+            className={styles.link}
+            href="https://snake-game-practice-mateusz-binieda.vercel.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img className={styles.image} src={snake} alt="Picture of snake project" />
           </a>
           <span className={styles.span}> Very Simple Snake Game</span>
-          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda">
-            <BsGithub className={styles.icons} />
+          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda" rel="noreferrer" target="_blank">
+            <BsGithub className={styles.icons} alt="Clickable Github icon" />
           </a>
         </div>
         <div className={styles.box}>
-          <a className={styles.link} href="https://snake-game-practice-mateusz-binieda.vercel.app/">
-            <img className={styles.image} src={snake} />
+          <a
+            className={styles.link}
+            href="https://snake-game-practice-mateusz-binieda.vercel.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img className={styles.image} src={snake} alt="Picture of snake project" />
           </a>
           <span className={styles.span}> Very Simple Snake Game</span>
-          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda">
-            <BsGithub className={styles.icons} />
+          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda" rel="noreferrer" target="_blank">
+            <BsGithub className={styles.icons} alt="Clickable Github icon" />
           </a>
         </div>
         <div className={styles.box}>
-          <a className={styles.link} href="https://snake-game-practice-mateusz-binieda.vercel.app/">
-            <img className={styles.image} src={snake} />
+          <a
+            className={styles.link}
+            href="https://snake-game-practice-mateusz-binieda.vercel.app/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img className={styles.image} src={snake} alt="Picture of snake project" />
           </a>
           <span className={styles.span}> Very Simple Snake Game</span>
-          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda">
-            <BsGithub className={styles.icons} />
+          <a href="https://github.com/Arssin/SnakeGame-Practice-MateuszBinieda" rel="noreferrer" target="_blank">
+            <BsGithub className={styles.icons} alt="Clickable Github icon" />
           </a>
         </div>
       </div>
