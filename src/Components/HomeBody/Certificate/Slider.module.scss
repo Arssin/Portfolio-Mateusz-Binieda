@@ -33,6 +33,9 @@
         min-width: 30rem;
         width: 33%;
         padding: 40px;
+        @media (max-width: 480px) {
+          min-width: 24rem;
+        }
 
         .img {
           width: 100%;
