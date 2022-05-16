@@ -101,6 +101,14 @@
   }
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar {
+    .navlist {
+      height: 80%;
+    }
+  }
+}
+
 @media screen and (max-width: 480px) {
   .navbar {
     .navlist {
@@ -122,7 +130,7 @@
       .list {
         margin-top: 0.2rem;
         .listanchor {
-          font-size: 0.9em;
+          font-size: 1em;
         }
       }
     }
