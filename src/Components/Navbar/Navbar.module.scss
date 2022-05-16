@@ -22,6 +22,7 @@
       margin: 1rem;
       text-transform: uppercase;
       opacity: 1;
+      display: flex;
 
       @media screen and (max-width: 1024px) {
         font-size: 0.9em;
@@ -37,11 +38,26 @@
         font-family: 'Bebas Neue';
         letter-spacing: 0.25rem;
         font-size: 1.1em;
+        padding: 5px;
 
         &:hover {
-          color: rgb(145, 25, 145);
-          transition: border-bottom 2s;
-          border-bottom: 3px solid;
+          &::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: white;
+            display: flex;
+            animation: fullbar 0.75s ease;
+          }
+        }
+
+        @keyframes fullbar {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: 100%;
+          }
         }
       }
     }

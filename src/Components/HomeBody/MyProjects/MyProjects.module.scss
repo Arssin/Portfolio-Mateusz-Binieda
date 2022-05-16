@@ -68,7 +68,7 @@
 @media screen and (max-width: 1024px) {
   .container {
     .boxDiv {
-      height: 60vh;
+      height: 40vh;
 
       .box {
         .span {
@@ -87,9 +87,13 @@
 @media screen and (max-width: 480px) {
   .container {
     .boxDiv {
-      height: 50vh;
+      height: 35vh;
       .link {
         line-height: 2.5;
+      }
+
+      .image {
+        height: calc(100% - 9vh);
       }
 
       .box {

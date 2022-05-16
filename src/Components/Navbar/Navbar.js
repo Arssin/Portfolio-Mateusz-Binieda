@@ -9,7 +9,7 @@ export function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <Link to="/">
+      <Link to="#">
         <img className={styles.logo} src={logo} alt="Logo" />
       </Link>
       <ul className={hamburgerIsOpen ? `${styles.navlist} ${styles.navlistDisabled}` : `${styles.navlist}`}>

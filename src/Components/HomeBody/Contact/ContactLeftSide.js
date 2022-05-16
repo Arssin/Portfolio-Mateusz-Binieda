@@ -18,6 +18,7 @@ export function ContactLeftSide() {
           >
             <span className={styles.span}>
               Facebook
+              <br />
               <BsFacebook className={styles.icons} alt="Facebook Icon" />
             </span>
           </a>
@@ -38,6 +39,7 @@ export function ContactLeftSide() {
           >
             <span className={styles.span}>
               Linkedin
+              <br />
               <BsLinkedin className={styles.icons} alt="Linkedin Icon" />
             </span>
           </a>
