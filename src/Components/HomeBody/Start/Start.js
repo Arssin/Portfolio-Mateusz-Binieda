@@ -10,7 +10,7 @@ export const Start = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section data-aos="zoom-out-up" id="home" className={styles.home}>
+    <section id="home" className={styles.home}>
       <ul className={styles.circles}>
         <li className={styles.list}></li>
         <li className={styles.list}></li>
