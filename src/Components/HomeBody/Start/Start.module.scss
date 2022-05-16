@@ -6,12 +6,17 @@
   height: 80vh;
   z-index: 1;
 
+  @media (orientation: landscape) {
+    height: 100%;
+  }
+
   .circles {
     position: absolute;
     width: 100%;
     height: inherit;
     overflow: hidden;
     z-index: -10;
+
     .list {
       position: absolute;
       display: block;
@@ -107,7 +112,7 @@
   display: flex;
   justify-content: center;
   padding: 15px 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   min-height: 10vh;
 
   h2 {
@@ -155,6 +160,13 @@
   flex-direction: column;
   justify-content: space-around;
   max-width: 50vw;
+
+  @media (orientation: landscape) {
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
 
   .text {
     font-size: 1.2rem;
