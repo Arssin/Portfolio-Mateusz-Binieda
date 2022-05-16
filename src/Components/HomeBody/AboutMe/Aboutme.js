@@ -28,7 +28,7 @@ export function Aboutme() {
             <li>+48 695 890 109</li>
             <li>mateusz.binieda@onet.pl</li>
           </ul>
-          <img data-aos="slide-left" src={avatar} alt="avatar" className={styles.avatar} />
+          <img data-aos="flip-left" src={avatar} alt="avatar" className={styles.avatar} />
         </div>
       </div>
     </section>
