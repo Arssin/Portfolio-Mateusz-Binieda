@@ -40,15 +40,18 @@
       justify-content: space-around;
       align-items: center;
       width: 70%;
+      @media (max-width: 480px) {
+        width: 80%;
+      }
 
       .pictureText {
         list-style-type: none;
         font-size: 1.4em;
         line-height: 2em;
 
-        @media screen and (max-width: 480px) {
-          text-align: center;
+        @media (max-width: 480px) {
           font-size: 1.1em;
+          white-space: nowrap;
         }
       }
       .avatar {
