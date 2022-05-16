@@ -35,17 +35,17 @@ export const Start = () => {
         </span>
         <span className={styles.catchMeSpan}>
           <h2 className={styles.catchMeText}>Catch me via: </h2>
-          <a href="https://www.facebook.com/mateusz.binieda.14/">
-            <BsFacebook className={styles.icons} />
+          <a href="https://www.facebook.com/mateusz.binieda.14/" rel="noreferrer" target="_blank">
+            <BsFacebook className={styles.icons} alt="Clickable Facebook icon" />
           </a>
-          <a href="https://www.linkedin.com/in/mateusz-bini%C4%99da-818141209/">
-            <BsLinkedin className={styles.icons} />
+          <a href="https://www.linkedin.com/in/mateusz-bini%C4%99da-818141209/" rel="noreferrer" target="_blank">
+            <BsLinkedin className={styles.icons} alt="Clickable Linkedin icon" />
           </a>
-          <a href="https://www.instagram.com/songo_bjj/">
-            <BsInstagram className={styles.icons} />
+          <a href="https://www.instagram.com/songo_bjj/" rel="noreferrer" target="_blank">
+            <BsInstagram className={styles.icons} alt="Clickable Instagram icon" />
           </a>
-          <a href="https://github.com/Arssin">
-            <BsGithub className={styles.icons} />
+          <a href="https://github.com/Arssin" rel="noreferrer" target="_blank">
+            <BsGithub className={styles.icons} alt="Clickable Github icon" />
           </a>
         </span>
       </div>
