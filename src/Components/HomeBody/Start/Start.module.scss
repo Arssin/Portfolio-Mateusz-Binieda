@@ -6,7 +6,7 @@
   height: 80vh;
   z-index: 1;
 
-  @media (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     height: 100%;
   }
 
@@ -16,6 +16,13 @@
     height: inherit;
     overflow: hidden;
     z-index: -10;
+
+    // @media (max-width: 480px) {
+    //   height: 100%;
+    // }
+    // @media (max-width: 1024px) and (orientation: landscape) {
+    //   height: 140%;
+    // }
 
     .list {
       position: absolute;
@@ -119,6 +126,10 @@
     color: #fff;
     font-size: 4rem;
     position: absolute;
+
+    @media (max-width: 480px) {
+      font-size: 3em;
+    }
   }
   .welcomeText {
     color: transparent;
@@ -161,7 +172,7 @@
   justify-content: space-around;
   max-width: 50vw;
 
-  @media (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     justify-content: center;
     height: 100%;
     gap: 2rem;
@@ -171,7 +182,11 @@
   .text {
     font-size: 1.2rem;
     letter-spacing: 0.15em;
-    padding: 0 10px;
+    padding: 0 15px;
+
+    @media (max-width: 480px) {
+      font-size: 1.1em;
+    }
   }
 
   .catchMeText {
@@ -202,6 +217,9 @@
     width: 100%;
     height: 80%;
     padding: 5px;
+    @media (max-width: 1024px) and (orientation: landscape) {
+      padding: 40px;
+    }
   }
 }
 
