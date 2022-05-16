@@ -49,7 +49,7 @@ export const Start = () => {
           </a>
         </span>
       </div>
-      <div data-aos="slide-left" className={styles.imageDiv}>
+      <div data-aos="zoom-in-up" className={styles.imageDiv}>
         <img src={img} className={styles.image} alt="welcome image" />
       </div>
     </section>
