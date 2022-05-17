@@ -104,7 +104,12 @@
 @media (max-width: 768px) and (orientation: landscape) {
   .navbar {
     .navlist {
-      height: 80%;
+      min-height: 20rem;
+      .list {
+        .listanchor {
+          font-size: 1em;
+        }
+      }
     }
   }
 }
@@ -121,7 +126,7 @@
       background-color: var(--clr-navbar);
       left: 0;
       width: 100%;
-      height: 44%;
+      height: 54%;
       z-index: 40;
 
       &Disabled {
@@ -129,6 +134,7 @@
       }
       .list {
         margin-top: 0.2rem;
+        position: relative;
         .listanchor {
           font-size: 1em;
         }

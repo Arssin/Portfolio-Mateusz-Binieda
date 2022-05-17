@@ -11,18 +11,6 @@ export const Start = () => {
   }, []);
   return (
     <section id="home" className={styles.home}>
-      <ul className={styles.circles}>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-        <li className={styles.list}></li>
-      </ul>
       <div className={styles.catchMe}>
         <div data-aos="flip-up" className={styles.title}>
           <h2 className={styles.welcomeText}>Welcome!</h2>
@@ -52,6 +40,18 @@ export const Start = () => {
       <div data-aos="zoom-in-up" className={styles.imageDiv}>
         <img src={img} className={styles.image} alt="welcome image" />
       </div>
+      <ul className={styles.circles}>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+        <li className={styles.list}></li>
+      </ul>
     </section>
   );
 };
