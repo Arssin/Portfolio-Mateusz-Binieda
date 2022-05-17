@@ -211,14 +211,16 @@
     min-width: 30rem;
     width: 55%;
     height: 70%;
+    margin: 0.5rem;
     padding: 5px;
+    box-shadow: 15px 10px 10px black;
 
     @media (min-width: 769px) and (max-width: 1024px) {
       min-width: 24rem;
     }
 
     @media (min-width: 481px) and (max-width: 768px) {
-      width: 65vw;
+      min-width: 22rem;
     }
     @media (max-width: 480px) {
       min-width: 19rem;
