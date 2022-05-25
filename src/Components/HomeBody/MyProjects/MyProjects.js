@@ -17,12 +17,7 @@ export const MyProjects = () => {
       <p className={styles.title}>my projects</p>
       <div data-aos="fade-up" className={styles.boxDiv}>
         <div className={styles.box}>
-          <a
-            className={styles.link}
-            href="https://sturdy-journey-761820ff.pages.github.io/"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <a className={styles.link} href="https://star-wars-quizz.netlify.app/" rel="noreferrer" target="_blank">
             <img className={styles.image} src={starwars} alt="Picture star wars quizz project" />
           </a>
           <span className={styles.span}> Star Wars Quizz App</span>
