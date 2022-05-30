@@ -14,7 +14,7 @@ export function Navbar() {
       </Link>
       <ul className={hamburgerIsOpen ? `${styles.navlist} ${styles.navlistDisabled}` : `${styles.navlist}`}>
         {['home', 'about', 'skills', 'my projects', 'certificates', 'contact me'].map((item) => (
-          <li className={styles.list} key={`link-${item}`}>
+          <li onClick={toggleHamburger} className={styles.list} key={`link-${item}`}>
             <a className={styles.listanchor} href={`#${item}`}>
               {item}
             </a>
