@@ -1,7 +1,7 @@
+import dyplom from '../../../images/dyplom.png';
 import certyfikat from '../../../images/certyfikat.png';
-import certyfikat1 from '../../../images/certyfikat1.png';
-import certyfikat2 from '../../../images/certyfikat2.png';
-import certyfikat3 from '../../../images/certyfikat3.jpg';
-import certyfikat4 from '../../../images/certyfikat4.jpg';
+import dyplom1 from '../../../images/dyplom.png';
+import certyfikat1 from '../../../images/certyfikat.png';
+import wait from '../../../images/wait.jpg';
 
-export default [certyfikat, certyfikat1, certyfikat2, certyfikat3, certyfikat4];
+export default [dyplom, certyfikat, dyplom1, certyfikat1, wait];
