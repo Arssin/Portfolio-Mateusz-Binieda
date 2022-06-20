@@ -17,9 +17,11 @@ export function Aboutme() {
           <br />
           💻 Focused mainly on the front-end, willingly using React to create applications.
           <br />
+          But in the future i want to become Full Stack Developer.
+          <br />
           💪🏻 With great pleasure do I broaden my horizons learning about new solutions.
           <br />
-          ⭐️ CodersCamp 2021/2022 participant ⭐️
+          ⭐️ CodersCamp 2021/2022 and DaftAcademy participant ⭐️
         </div>
         <div className={styles.picturediv}>
           <ul className={styles.pictureText}>
