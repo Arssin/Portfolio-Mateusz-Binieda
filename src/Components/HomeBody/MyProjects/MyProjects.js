@@ -87,6 +87,7 @@ export const MyProjects = () => {
         </div>
       </div>
       <div data-aos="fade-up" className={styles.boxDiv}>
+        <div className={styles.box}></div>
         <div className={styles.box}>
           <a className={styles.link} href="https://star-wars-quizz.netlify.app/" rel="noreferrer" target="_blank">
             <img className={styles.image} src={starwars} alt="Picture star wars quizz project" />

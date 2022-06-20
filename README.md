@@ -1,4 +1,5 @@
-Nazywam się Mateusz Binięda a to moje portfolio!
+# My Name is Mateusz Binięda... and this is my portfolio!
 
-Zakładka Contact Me, przesyła automatycznie wiadomość na moją skrzynkę pocztową.
-Stylowanie bez wykorzystania gotowych bibliotek. Wyjątkiem są aos i framer-motion, które zostały użyte do części animacji.
+## Check this out and feel free to contact me anytime! 😊
+
+`Used: React, React Router, SCSS, AOS(for some scrolling animations), EmailJS(for contact me part) and Framer-motion(for slider). `
