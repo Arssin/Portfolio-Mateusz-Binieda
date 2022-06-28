@@ -8,7 +8,6 @@ export default {
   },
 };
 
-// eslint-disable-next-line no-undef
 const Template = (args) => <Footer {...args} />;
 
 export const FooterStory = Template.bind({});

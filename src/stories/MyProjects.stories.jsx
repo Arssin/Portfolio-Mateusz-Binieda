@@ -5,7 +5,6 @@ export default {
   component: MyProjects,
 };
 
-// eslint-disable-next-line no-undef
 const Template = (args) => <MyProjects {...args} />;
 
 export const FooterStory = Template.bind({});

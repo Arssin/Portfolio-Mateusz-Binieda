@@ -5,7 +5,6 @@ export default {
   component: Skills,
 };
 
-// eslint-disable-next-line no-undef
 const Template = (args) => <Skills {...args} />;
 
 export const SkillsStory = Template.bind({});
