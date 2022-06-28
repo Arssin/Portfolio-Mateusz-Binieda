@@ -1,6 +1,16 @@
 import { RiReactjsFill, RiHtml5Fill } from 'react-icons/ri';
 import { FaSass, FaCss3Alt, FaNodeJs } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiJest, SiRedux, SiGit, SiDocker } from 'react-icons/si';
+import {
+  SiTypescript,
+  SiJavascript,
+  SiJest,
+  SiRedux,
+  SiGit,
+  SiDocker,
+  SiStorybook,
+  SiWebpack,
+  SiBootstrap,
+} from 'react-icons/si';
 import styles from './Skills.module.scss';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -59,6 +69,18 @@ export const Skills = () => {
             <SiDocker className={styles.icon} />
             <div className={styles.text}>Docker</div>
           </div>
+          <div className={styles.slide}>
+            <SiStorybook className={styles.icon} />
+            <div className={styles.text}>Storybook</div>
+          </div>
+          <div className={styles.slide}>
+            <SiWebpack className={styles.icon} />
+            <div className={styles.text}>Webpack</div>
+          </div>
+          <div className={styles.slide}>
+            <SiBootstrap className={styles.icon} />
+            <div className={styles.text}>Bootstrap</div>
+          </div>
 
           <div className={styles.slide}>
             <RiReactjsFill className={styles.icon} />
@@ -103,6 +125,18 @@ export const Skills = () => {
           <div className={styles.slide}>
             <SiDocker className={styles.icon} />
             <div className={styles.text}>Docker</div>
+          </div>
+          <div className={styles.slide}>
+            <SiStorybook className={styles.icon} />
+            <div className={styles.text}>Storybook</div>
+          </div>
+          <div className={styles.slide}>
+            <SiWebpack className={styles.icon} />
+            <div className={styles.text}>Webpack</div>
+          </div>
+          <div className={styles.slide}>
+            <SiBootstrap className={styles.icon} />
+            <div className={styles.text}>Bootstrap</div>
           </div>
         </div>
       </div>
