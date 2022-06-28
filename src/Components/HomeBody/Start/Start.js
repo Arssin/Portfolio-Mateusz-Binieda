@@ -1,7 +1,7 @@
 import styles from '../Start/Start.module.scss';
 import { BsInstagram, BsGithub, BsLinkedin, BsFacebook } from 'react-icons/bs';
 import img from '../../../images/picture.jpg';
-import pdf from '../../../images/cv.pdf';
+import pdf from '../../../images/myCV.pdf';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';

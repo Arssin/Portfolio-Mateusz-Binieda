@@ -2,4 +2,4 @@
 
 ## Check this out and feel free to contact me anytime! 😊
 
-`Used: React, React Router, SCSS, AOS (for some scrolling animations), EmailJS (for contact me part) and Framer-motion (for slider). `
+`Used: React, React Router, Storybook, SCSS, AOS (for some scrolling animations), EmailJS (for contact me part) and Framer-motion (for slider). `

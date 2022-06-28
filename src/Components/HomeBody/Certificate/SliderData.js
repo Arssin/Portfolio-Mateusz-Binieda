@@ -1,6 +1,6 @@
-import dyplom from '../../../images/dyplom.png';
+import dyplom from '../../../images/certyfikatCC.png';
 import certyfikat from '../../../images/certyfikat.png';
-import dyplom1 from '../../../images/dyplom.png';
+import dyplom1 from '../../../images/certyfikatCC.png';
 import certyfikat1 from '../../../images/certyfikat.png';
 import wait from '../../../images/wait.jpg';
 
